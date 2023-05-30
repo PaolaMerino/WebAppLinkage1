@@ -1,0 +1,23 @@
+﻿@model List<WebAppLinkage1.Models.Departamento>
+@{
+    ViewBag.Title = "Departamento de El Salvador";
+}
+<h1>"Bienvenidos a El Salvador"</h1>
+<table >
+    <thead>
+        <tr>
+            <th>idDepartamento</th>
+            <th>Departamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var depto in Model)
+        {
+        <tr>
+            <td>@depto.idDepartamento</td>
+            <td>@depto.departamento</td>
+        </tr>
+            }
+    </tbody>
+</table>
+
